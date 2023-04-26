@@ -1,3 +1,38 @@
-body {
-    background : yellow
+html,body{
+    width : 100%;
+    height: 100%
+}
+
+header {
+    float: left;
+    height : 15%;
+    width : 100%;
+    background : grey
+}
+
+nav {
+    float : left;
+    width : 15%;
+    height : 65%;
+    background : white;
+
+}
+
+.content  {
+    float : left;
+    width : 85%;
+    height : 65%;
+    background : #F4F4F4 ;
+
+}
+
+footer {
+    float : left;
+    height: 10%;
+    width : 100%;
+    background : grey
+}
+
+thead {
+    color : blue;
 }

@@ -21,4 +21,6 @@ from stock import views
 urlpatterns = [
     path('',views.homePage),
     path('admin/', admin.site.urls),
+    path('product/list',views.productList),
+    path('product/add/simple',views.productAddSimple),
 ]
