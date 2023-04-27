@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+
+from .form import producAddForm
 from .models import Product
 
 # Create your views here.
@@ -52,4 +54,18 @@ def productDelete(request,id):
     product.delete()
 
     return redirect('/product/list')
+
+
+def productAdd(request):
+
+    if request.method == 'POST':
+        productForm = producAddForm(request.POST)
+        productForm.save()
+        return redirect('/product/list')
+    else :
+        productForm = producAddForm()
+
+    return render(request,
+                  'productAdd.html',
+                  {'form': productForm})
 

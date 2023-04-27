@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/list',views.productList),
     path('product/add/simple',views.productAddSimple),
+    path('product/add',views.productAdd),
     path('product/<int:id>/', views.productDetail),
     path('product/<int:id>/delete', views.productDelete),
 ]
